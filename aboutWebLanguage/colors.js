@@ -1,21 +1,30 @@
 		/* object */
 		var Body = {
 			setColor:function(color){
-				document.querySelector('body').style.color = color;
+				//using JavaSCript language
+				//document.querySelector('body').style.color = color;
+				//using JQuery 
+				$('body').css('color',color);
 			},
 			setBackgroundColor:function(color){
-				document.querySelector('body').style.backgroundColor = color;
+				//using JavaSCript language
+				//document.querySelector('body').style.backgroundColor = color;
+				//using JQuery 
+				$('body').css('backgroundColor',color);
 			}
 		};
 		var links = {
 			setLinkColor:function(color){
-				/* loop & array */
-				var alist = document.querySelectorAll('a');
-				var i = 0;
-				while(i<alist.length){
-					alist[i].style.color = color;
-					i+= 1;
-				}
+				//using JavaScript language
+				// /* loop & array */
+				// var alist = document.querySelectorAll('a');
+				// var i = 0;
+				// while(i<alist.length){
+				// 	alist[i].style.color = color;
+				// 	i+= 1;
+				// }
+				//using JQuery 
+				$('a').css('color',color);
 			}
 		};
 		function nightDayHandler(self){

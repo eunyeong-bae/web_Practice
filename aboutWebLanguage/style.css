@@ -11,6 +11,10 @@
 			margin: 0;
 			padding: 20px;
 		}
+		#night_day{
+			font-size: 20px;
+			margin-left: 30px;
+		}
 		#grid{
 			display: grid;
 			grid-template-columns: 150px 1fr;
