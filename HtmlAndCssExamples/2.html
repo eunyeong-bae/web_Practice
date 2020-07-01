@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Navigation menu with float</title>
+	<style type="text/css">
+		ul{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			background-color: #333333;
+			overflow: hidden;
+		}
+		li{
+			/*float:left 는 리스트를 수평으로 보이게 해준다*/
+			float: left;
+		}
+		li a{
+			color: white;
+			text-decoration: none;
+			text-align: center;
+			display: block;
+			padding: 16px;
+		}
+		li a:hover{
+			background-color: #111111;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+
+	<h2>Navigation Menu</h2>
+	<p>In this example, we use CSS to style the list horizontally, to create a navigation menu:</p>
+
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">News</a></li>
+		<li><a href="#">Contact</a></li>
+		<li><a href="#">About</a></li>
+	</ul>
+</body>
+</html>
