@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css flexbox</title>
+	<style type="text/css">
+		.flex-container{
+			background-color: DodgerBlue;
+			display: flex;
+			flex-wrap: nowwrap;
+		}
+		.flex-container .box{
+			width: 50%;
+			background-color: #f1f1f1;
+			text-align:center;
+			margin: 10px;0
+			font-size: 30px;
+			line-height: 60px;
+		}
+	</style>
+</head>
+<body>
+	<div class="flex-container">
+		<div class="box">Box 1 - This is some text to make sure that the content gets really tall. This is some text to make sure that the content gets really tall. This is some text to make sure that the content gets really tall.</div>
+		<div class="box">
+			Box 2 - My height will follow Box 1.
+		</div>
+	</div>
+</body>
+</html>
