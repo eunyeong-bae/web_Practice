@@ -13,25 +13,41 @@
       }
 
       h6.warning {
-        /* 여기도 코드가 필요하겠죠? 빨간색 글씨 */
+        color: red;
       }
     </style>
 
     <script>
       function q1(){
-        // 여기에 코드를 입력하세요
+        let txt = $('#input-q1').val();
+        if(txt==''){
+          alert('입력해라!');
+        }else{
+          alert(txt);
+        }
       }
 
       function q5(){
-        // 여기에 코드를 입력하세요
+        let txt = $('#input-q5').val();
+
+        if(txt.indexOf('@')<0){
+          $('#domain-q5').hide();
+          $('#warning-q5').text('이메일이 아니쟈나!');
+        }
+        else{
+          $('#domain-q5').text(txt.split('@')[1]);
+          $('#warning-q5').hide();
+        }
       }
 
       function q7() {
-        // 여기에 코드를 입력하세요
+        let txt = $('#input-q7').val();
+        let temp = '<li>'+txt+'</li>';
+        $('#names-q7').append(temp);
       }
 
       function q7_remove() {
-        // 여기에 코드를 입력하세요
+        $('#names-q7').html('');
       }
 
     </script>
