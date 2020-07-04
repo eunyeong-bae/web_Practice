@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.wrap{
+			width: 300px;
+			margin: 50px auto 0 auto;
+		}
+		.mytitle{
+			color: white;
+			background-image: url('http://www.forest.go.kr/newkfsweb/cmm/fms/FileDown.do?atchFileId=FILE_000000010008639&fileSn=0');
+			width: 300px;
+			height: 200px;
+			background-size: cover;
+			border-radius: 10px;
+			text-align: center;
+			background-position: center;
+			
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		.mytitle > h1{
+			margin: 0 0 5px 0;
+		}
+		.mytitle > h5{
+			margin: 5px 0 0 0;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="mytitle">
+			<h1>로그인 페이지</h1>
+			<h5>아이디, 비밀번호를 입력해주세요.</h5>
+		</div>
+		<p>
+			ID:
+			<input type="text">
+		</p>
+		<p>
+			PW:
+			<input type="password">
+		</p>
+		<button class="mybtn">로그인 하기</button>
+	</div>
+</body>
+</html>
