@@ -44,26 +44,35 @@
       border: solid;
       display: block;
     }
+    .form-post{
+      display: none;
+    }
   </style>
   <script type="text/javascript">
-    
-    function hey(){
-
+    function openclose(){
+      if($('#post-box').css('display')=='none'){
+        $('#post-box').show();
+        $('#posting-btn').text('포스팅박스 닫기');
+      }else{
+        $('#post-box').hide();
+        $('#posting-btn').text('포스팅박스 열기');
+      } 
     }
+    
   </script>
 </head>
 <body>
   <div class="wrap">
+    <!-- Top section-->
     <div class="jumbotron">
       <h1 class="display-4">나홀로 링크 메모장!</h1>
       <p class="lead">중요한 링크를 저장해두고, 나중에 볼 수 있는 공간입니다</p>
       <hr class="my-4">
       <p class="lead">
-        <a class="btn btn-primary btn-lg" href="#" role="button">포스팅박스 열기</a>
+        <a id="posting-btn" class="btn btn-primary btn-lg" href="#" role="button" onclick="openclose()">포스팅박스 열기</a>
       </p>
-      <!-- delete-->
-      <button id="btn" onclick="hey()">button</button>
     </div>
+    <!-- form section-->
     <div class="form-post" id="post-box">
       <div>
         <div class="form-group">
@@ -77,6 +86,7 @@
         <button type="button" class="btn btn-primary">기사저장</button>
       </div>
     </div>
+    <!-- cards section -->
     <div class="card-columns" id="cards-box">
       <div class="card">
         <img class="card-img-top" src="https://www.eurail.com/content/dam/images/eurail/Italy%20OCP%20Promo%20Block.adaptive.767.1535627244182.jpg" alt="Card image cap">
