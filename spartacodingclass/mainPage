@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.wrap{
+			width: 900px;
+			margin: 15px auto 0 auto;
+		}
+		div.img{
+			padding-left: 250px;
+		}
+		.title{
+			display: flex;
+			flex-direction: row;
+		}
+		.title>p{
+			padding: 20px 0 0 30px;
+		}
+		.description{
+			margin-top: 0;
+			margin-bottom: 40px;
+		}
+		form{
+			padding: 10px;
+		}
+		input[type="text"],select{
+			border: 1px solid lightgrey;
+			border-radius: 4px;
+			padding: 14px 18px;
+			margin:0 0 10px 15px;
+		}
+		.btn{
+			border-radius: 4px;
+			background-color: white;
+			padding: 12px 16px;
+			border: 1px solid lightgrey;
+			width: 50%;
+			margin:20px 0 20px 230px;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="img">
+			<img src="https://photo.akmall.com/image4/goods/88/19/34/04/88193404_M_350.jpg" alt="아르마니 파운데이션">
+		</div>
+		<div class="product">
+			<div class="title">
+				<h1>상품제목</h1>
+				<p>가격: 82,000원 / 개</p>			
+			</div>
+			<p class="description">혁신적 밀착력, 롱-래스팅 기능으로 티없이 깨끗하고 실크처럼 매끄러운 피부를 연출해주는 피팅 파운데이션<br>
+			제 2의 피부처럼 피부에 가볍게 착 밀착되어, 스포트 라이트 아래에서도 어디에서도 하루 종일 터치-업 없이도 처음 바른 상태로 지속되는 파운데이션의 새로운 혁명<br>	조르지오 아르마니만의 완벽하고 빈틈없는 밀착력과 혁신적인 롱-래스팅 파워로 티없이 깨끗하며 실크처럼 매끄러운 피부를 완성해줍니다.</p>
+		</div>
+		<div class="order">
+			<h1>주문하기</h1>
+			<form>
+				<div class="username">
+					<label for="username">주문자 성함:</label>
+					<input type="text" id="username" name="username">
+				</div>
+				<div class="count">
+					<label for="count">수량:</label>
+					<select style="margin-left: 68px;padding-right: 150px;">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+					</select>
+				</div>
+				<div class="address">
+					<label for="addr">주소:</label>
+				 	<input style="margin-left: 67px;" type="text" name="addr" id="addr">
+				</div>
+				<div class="number">
+					<label for="number">전화번호:</label>
+					<input style="margin-left: 34px;" type="text" inputmode="number" name="number">
+				</div>
+			</form>
+		</div>
+		<button class="btn">주문하기</button>
+	</div>
+</body>
+</html>
